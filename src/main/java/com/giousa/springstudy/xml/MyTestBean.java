@@ -1,4 +1,4 @@
-package com.giousa.springstudy.bean;
+package com.giousa.springstudy.xml;
 
 public class MyTestBean {
 
