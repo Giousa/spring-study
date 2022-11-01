@@ -9,11 +9,11 @@ public class UserBean {
     private Integer age;
 
     public UserBean() {
-        System.out.println("UserBean no param has init");
+//        System.out.println("UserBean no param has init");
     }
 
     public UserBean(Long id, String name, Integer age) {
-        System.out.println("UserBean three param has init");
+//        System.out.println("UserBean three param has init");
         this.id = id;
         this.name = name;
         this.age = age;

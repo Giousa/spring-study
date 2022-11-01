@@ -1,10 +1,10 @@
 package com.giousa.springstudy.thread;
 
+import com.alibaba.fastjson.JSON;
 import com.giousa.springstudy.custom.UserDTO;
+import com.google.common.collect.Maps;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.*;
 
 public class ThreadTest {
@@ -197,5 +197,22 @@ public class ThreadTest {
 
     public static void main(String[] args) {
         thread6();
+
+        Map<String,String> map = Maps.newHashMap();
+        map.put("A","111");
+        map.put("B","222");
+        map.put("C","333");
+
+        for (Map.Entry<String,String> m : map.entrySet()){
+            String value = m.getValue();
+            System.out.println(value);
+        }
+
+        String s = JSON.toJSONString(map);
+        System.out.println(s);
+
+        String sss = "{\"A\":\"111\",\"B\":\"222\",\"C\":\"333\"}";
+        HashMap<String,String> map1 = JSON.parseObject(sss, HashMap.class);
+        System.out.println(map1);
     }
 }
