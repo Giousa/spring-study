@@ -21,7 +21,7 @@ public class ArrayAlg {
 
     private void exec2(Pair<? extends BaseDTO> pair){
         BaseDTO first = pair.getFirst();
-        System.out.println(first);
+        System.out.println("exec2 first 》》》》》 ： "+first);
         first.baseMethod();
     }
 
@@ -37,14 +37,14 @@ public class ArrayAlg {
 
         ArrayAlg arrayAlg = new ArrayAlg();
         String middle = arrayAlg.getMiddle("1", "2", "a", "g", "h");
-        System.out.println(">>>>>>> : " + middle);
+        System.out.println("String getMiddle >>>>>>> : " + middle);
 
         UserDTO m = arrayAlg.getMiddle(
                 new UserDTO(1, "a"),
                 new UserDTO(2, "b"),
                 new UserDTO(3, "c"),
                 new UserDTO(4, "e"));
-        System.out.println("m = "+m);
+        System.out.println("UserDTO getMiddle >>>>>>> : "+m);
 
         System.out.println("---------------");
 
